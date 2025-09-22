@@ -294,7 +294,7 @@ header {
 
 .card.shelf-life .orange-wrapper {
   position: absolute;
-  top: -58%;
+  top: -50%;
   right: 25%;
   display: flex;
   justify-content: flex-end;
@@ -545,14 +545,10 @@ header {
 
 .potential-risk .risk-face {
   padding-left: 0%;
-  width: 38%;
+  width: 45%;
   position: absolute;
   right: -3%;
-  /* align to right edge */
   top: -7.5rem;
-  /* overflow above card */
-  bottom: -3rem;
-  /* overflow below card */
   height: auto;
   z-index: 2;
 }
