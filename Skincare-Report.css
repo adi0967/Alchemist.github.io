@@ -1,0 +1,880 @@
+@font-face {
+  font-family: 'BehindTheNineties';
+  src: url('/assets/fonts/BehindTheNineties-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina';
+  src: url('/assets/fonts/MessinaSansMonoWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'BehindTheNineties', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background: url("/assets/images/BackgroundPage1.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.01rem 0.01rem;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.logo img {
+  max-width: 9vw;
+  height: auto;
+}
+
+.title {
+  padding-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.title h1 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  color: #BA1C1C;
+  margin: 0;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2D4531;
+  margin: 0.1rem 0 0 0;
+  padding-left: 3.5%;
+}
+
+.title h2::after {
+  content: "";
+  display: block;
+  width: 97%;
+  height: 1px;
+  background-color: #BA1C1C;
+  margin-top: 0.3rem;
+  border-radius: 2px;
+}
+
+.date {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #BA1C1C;
+  padding-top: 1.75%;
+  padding-right: 0.5%;
+  letter-spacing: 0.15em;
+}
+
+
+
+/*Common Card Design*/
+.card {
+  background: #fff;
+  margin: 2.5rem auto;
+  padding: 1.2rem 2rem;
+  border-radius: 30px;
+  max-width: 70%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* First card*/
+.card.skincare-analysis {
+  border-top-left-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 6%;
+}
+
+.card-header {
+  background-color: #BA1C1C;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  position: absolute;
+  top: -49px;
+  left: 0px;
+  display: inline-block;
+  letter-spacing: 0.2em;
+}
+
+.skincare-analysis .card-body {
+  color: #2D4531;
+  letter-spacing: 0.1em;
+}
+
+.skincare-analysis .card-body .total {
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0%;
+  padding-left: 1.5%;
+}
+
+.products {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+
+.products span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.products ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  padding-top: 0.5%;
+}
+
+.products ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2em;
+  font-family: 'Messina', serif;
+}
+
+.products ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  background-color: #909691;
+  border-radius: 50%;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.tag {
+  padding: 0.5rem 1.75rem;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  box-shadow: 0 4px 6px rgba(75, 75, 75, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+}
+
+.yellow {
+  background: #ffd302;
+  color: #9A1313;
+}
+
+.green {
+  background: #A8D14F;
+  color: #314A0A;
+}
+
+.red {
+  background: #BA1C1C;
+  color: #fff;
+}
+
+
+
+
+
+
+/* Second card */
+.card.shelf-life {
+  position: relative;
+  display: block;
+  overflow: visible;
+  letter-spacing: 0.15em;
+}
+
+.shelf-life .shelf-life-title {
+  display: block;
+  font-size: 2rem;
+  color: #2D4531;
+  margin: 0;
+  line-height: 1.2;
+  padding-left: 1.4%;
+}
+
+.card.shelf-life .subtitle {
+  display: block;
+  color: #BA1C1C;
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 1.5%;
+  font-family: 'Messina', serif;
+  letter-spacing: 0.1rem;
+}
+
+
+.card.shelf-life .flex {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.card.shelf-life .gauge {
+  flex: 0 0 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0;
+  margin: 0%;
+}
+
+.card.shelf-life .divider {
+  width: 0.01%;
+  background: #2D4531;
+  margin: 0;
+  flex-shrink: 0;
+  height: 14rem;
+}
+
+.card.shelf-life .gauge img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card.shelf-life .desc {
+  flex: 0 0 55%;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Messina', serif;
+  margin: 0;
+}
+
+.card.shelf-life .orange-wrapper {
+  position: absolute;
+  top: -58%;
+  right: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.card.shelf-life .orange {
+  width: 50%;
+  height: auto;
+  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.15));
+}
+
+.card.shelf-life .arrow {
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  width: 20%;
+  height: auto;
+  transform: rotate(-15deg);
+  opacity: 0.8;
+}
+
+.card.shelf-life .orange-wrapper-text {
+  margin-top: 7%;
+  color: #BA1C1C;
+  padding-left: 5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 0;
+}
+
+
+
+
+/* Card 3 */
+.card.chem-breakdown {
+  position: relative;
+  display: block;
+  overflow: visible;
+  letter-spacing: 0.14em;
+}
+
+.chem-breakdown .chem-breakdown-title {
+  display: block;
+  font-size: 2rem;
+  color: #2D4531;
+  margin: 0;
+  line-height: 1.2;
+  padding-left: 1.4%;
+}
+
+.chem-breakdown .chem-breakdown-subtitle {
+  display: block;
+  color: #BA1C1C;
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 1.4%;
+  font-family: 'Messina', serif;
+  letter-spacing: 0.1rem;
+}
+
+.chem-breakdown .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.chem-breakdown .flex img:first-child {
+  flex: 0 0 40%;
+  width: 50%;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.chem-breakdown .pie-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 5%;
+  padding-right: 1%;
+}
+
+.chem-breakdown .pie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  width: 100%;
+  font-weight: 500;
+  font-family: 'Messina', serif;
+}
+
+.chem-breakdown .pie-info p {
+  margin: 0.2rem 0;
+}
+
+.chem-breakdown .pie-info .natural {
+  color: #2D4531;
+}
+
+.chem-breakdown .pie-info .synthetic {
+  color: #BA1C1C;
+  padding-left: 5%;
+}
+
+.chem-breakdown .divider {
+  width: 0.01%;
+  background: #2D4531;
+  margin: 0;
+  flex-shrink: 0;
+  height: 14rem;
+}
+
+
+.chem-breakdown .flex img:last-child {
+  padding-left: 2%;
+  padding-right: 2%;
+  flex: 0 0 50%;
+  max-width: 45%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Card 4*/
+.card.potential-risk {
+  position: relative;
+  display: block;
+  overflow: visible;
+  letter-spacing: 0.15em;
+}
+
+.potential-risk .potential-risk-title {
+  display: block;
+  font-size: 2rem;
+  color: #2D4531;
+  margin: 0;
+  line-height: 1.2;
+  padding-left: 1.4%;
+}
+
+.potential-risk .potential-risk-subtitle {
+  display: block;
+  color: #BA1C1C;
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 1.4%;
+  font-family: 'Messina', serif;
+  letter-spacing: 0rem;
+}
+
+.potential-risk .divider {
+  width: 0.01%;
+  background: #2D4531;
+  margin: 0;
+  flex-shrink: 0;
+  height: 8rem;
+}
+
+
+
+
+
+.potential-risk .flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  position: relative;
+  overflow: visible;
+}
+
+
+.potential-risk .risk-left {
+  flex: 0 0 50%;
+  padding-left: 4%;
+}
+
+.potential-risk .risk-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Messina', serif;
+}
+
+.potential-risk .risk-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  letter-spacing: normal;
+  padding-right: 5%;
+}
+
+.risk-icon {
+  width: 5%;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+
+.badge {
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  margin-left: auto;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.badge.high {
+  background: #D6201F;
+  color: white;
+}
+
+.badge.medium {
+  background: #FFD302;
+  color: #BA1C1C;
+}
+
+.badge.low {
+  background: #A8D14F;
+  color: #2D4531;
+}
+
+.potential-risk .risk-face {
+  padding-left: 0%;
+  width: 38%;
+  position: absolute;
+  right: -3%;
+  /* align to right edge */
+  top: -7.5rem;
+  /* overflow above card */
+  bottom: -3rem;
+  /* overflow below card */
+  height: auto;
+  z-index: 2;
+}
+
+
+
+
+@media (min-width: 319px) and (max-width: 460px) {
+  header {
+    margin-bottom: 12%;
+  }
+
+  .title {
+    padding-top: 4%;
+    padding-left: 0%;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .title h2 {
+    font-size: 0.95rem;
+    padding-left: 1.5%;
+  }
+
+  .title h2::after {
+    width: 100%;
+    height: 0.5px;
+  }
+
+  .date {
+    font-size: 0.25rem;
+  }
+
+  .card {
+    margin: 0.75rem auto;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+    width: 75%;
+  }
+
+  .card.skincare-analysis {
+    border-top-left-radius: 20px;
+  }
+
+  .card.skincare-analysis .card-header {
+    border-radius: 5px;
+    font-size: 0.55rem;
+    top: -20%;
+    left: 1%;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .skincare-analysis .card-body .total {
+    font-size: 0.75rem;
+  }
+
+  .products {
+    gap: 0rem;
+    letter-spacing: 0rem;
+  }
+
+  .products span {
+    font-size: 0.65rem;
+  }
+
+  .products ul {
+    font-size: 0.5rem;
+  }
+
+  .products ul li::before {
+    width: 2px;
+    height: 2px;
+  }
+
+  .tags {
+    gap: 0.2rem;
+  }
+
+  .tag {
+    font-size: 0.3rem;
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 0.05rem;
+  }
+
+
+  .shelf-life .shelf-life-title {
+    font-size: 0.75rem;
+  }
+
+  .card.shelf-life .subtitle {
+    font-size: 0.45rem;
+    letter-spacing: 0rem;
+  }
+
+  .card.shelf-life .gauge {
+    flex: 0 0 35%;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .card.shelf-life .gauge img {
+    width: 90%;
+  }
+
+  .card.shelf-life .divider {
+    width: 0.1%;
+    height: auto;
+    opacity: 25%;
+  }
+
+  .card.shelf-life .desc {
+    font-size: 0.3rem;
+  }
+
+  .card.shelf-life .orange-wrapper-text {
+    margin-top: 5%;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    color: #2D4531;
+  }
+
+  .card.shelf-life .orange-wrapper {
+    top: -85%;
+    right: 10%;
+  }
+
+  .card.shelf-life .orange {
+    width: 50%;
+    height: auto;
+  }
+
+  .card.shelf-life .arrow {
+    bottom: 0%;
+    right: 50%;
+    width: 20%;
+  }
+
+  .chem-breakdown .chem-breakdown-title {
+    font-size: 0.75rem;
+  }
+
+  .chem-breakdown .chem-breakdown-subtitle {
+    font-size: 0.4rem;
+    letter-spacing: 0rem;
+  }
+
+  .chem-breakdown .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .chem-breakdown .divider {
+    display: none;
+  }
+
+  .chem-breakdown .flex img:first-child {
+    width: 40%;
+  }
+
+  .chem-breakdown .pie-info {
+    font-size: 0.5rem;
+  }
+
+  .chem-breakdown .pie-wrap {
+    padding-left: 20%;
+    margin-top: 2%;
+  }
+
+  .chem-breakdown .flex img:last-child {
+    padding-left: 1%;
+    padding-right: 1%;
+    max-width: 85%;
+    margin-top: 2%;
+  }
+
+
+  .potential-risk .potential-risk-title {
+    font-size: 0.75rem;
+  }
+
+  .potential-risk .potential-risk-subtitle {
+    font-size: 0.4rem;
+    letter-spacing: 0rem;
+  }
+
+  .potential-risk .risk-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.35rem;
+    letter-spacing: normal;
+  }
+
+  .risk-icon {
+    width: 4%;
+  }
+
+  .badge {
+    font-size: 0.35rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .potential-risk .risk-face {
+    width: 50%;
+    right: -8%;
+    top: -50%;
+    height: auto;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 417px){
+  
+  .potential-risk .risk-face {
+    width: 50%;
+    right: -8%;
+    top: -40%;
+    height: auto;
+    z-index: 2;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px){
+  
+  .potential-risk .risk-face {
+    width: 45%;
+    right: -8%;
+    top: -20%;
+    height: auto;
+    z-index: 2;
+  }
+}
+
+
+@media (min-width: 319px) and (max-width: 418px) {
+ 
+  
+  .skincare-analysis .card-body .total {
+    font-size: 0.65rem;
+  }
+  .products span {
+    font-size: 0.5rem;
+  }
+  .products ul {
+    font-size: 0.45rem;
+  }
+
+  .tag {
+    font-size: 0.25rem;
+    padding: 0.2rem 0.25rem;
+    letter-spacing: 0.05rem;
+  }
+
+
+  .shelf-life .shelf-life-title {
+    font-size: 0.65rem;
+  }
+
+  .card.shelf-life .subtitle {
+    font-size: 0.35rem;
+    letter-spacing: 0rem;
+  }
+
+  .card.shelf-life .desc {
+    font-size: 0.25rem;
+  }
+
+  .chem-breakdown .chem-breakdown-title {
+    font-size: 0.65rem;
+  }
+
+  .chem-breakdown .chem-breakdown-subtitle {
+    font-size: 0.35rem;
+    letter-spacing: 0rem;
+  }
+  .chem-breakdown .pie-info {
+    font-size: 0.4rem;
+  }
+
+  .chem-breakdown .pie-wrap {
+    padding-left: 10%;
+    padding-right:2% ;
+    margin-top: 2%;
+  }
+
+
+  .potential-risk .potential-risk-title {
+    font-size: 0.65rem;
+  }
+
+  .potential-risk .potential-risk-subtitle {
+    font-size: 0.35rem;
+    letter-spacing: 0rem;
+  }
+
+  .potential-risk .risk-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.3rem;
+    letter-spacing: normal;
+    gap:0.25rem
+  }
+
+  .risk-icon {
+    width: 4%;
+  }
+
+  .badge {
+    font-size: 0.25rem;
+    padding: 0.2rem 0.25rem;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 345px) {
+  .card.shelf-life .orange-wrapper-text {
+    margin-top: 4%;
+  }
+  .card.shelf-life .orange-wrapper {
+    top: -70%;
+    right:10%;
+  }
+}
