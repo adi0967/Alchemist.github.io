@@ -550,11 +550,8 @@ header {
   width: 38%;
   position: absolute;
   right: -3%;
-  /* align to right edge */
   top: -7.5rem;
-  /* overflow above card */
-  bottom: -3rem;
-  /* overflow below card */
+  bottom: auto;
   height: auto;
   z-index: 2;
 }
