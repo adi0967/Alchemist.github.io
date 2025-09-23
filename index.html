@@ -9,119 +9,125 @@
 </head>
 
 <body>
+    <div class="page-content">
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <img src="assets/images/MainLogo.png" alt="The Modern Alchemist">
-        </div>
-        <section class="title">
-            <h1>The Modern Alchemist</h1>
-            <h2>Your Personalised Skincare Report</h2>
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">
+                <img src="assets/images/MainLogo.png" alt="The Modern Alchemist">
+            </div>
+            <section class="title">
+                <h1>The Modern Alchemist</h1>
+                <h2>Your Personalised Skincare Report</h2>
+            </section>
+            <div class="date">27th August 2025</div>
+        </header>
+
+        <!-- OVERALL ANALYSIS -->
+        <section class="card skincare-analysis">
+            <div class="card-header">Análisis General del Cuidado de la Piel</div>
+            <div class="card-body">
+                <p class="total">Número de productos analizados : &nbsp;3</p>
+                <div class="products">
+                    <span>Productos:</span>
+                    <ul>
+                        <li>Crema hidratante Cerave xxx</li>
+                        <li>Nombre del producto</li>
+                        <li>Nombre del producto</li>
+                    </ul>
+                </div>
+                <div class="tags">
+                    <span class="tag yellow">3 Productos</span>
+                    <span class="tag green">94% Natural</span>
+                    <span class="tag red">6% Sintético</span>
+                </div>
+            </div>
         </section>
-        <div class="date">27th August 2025</div>
-    </header>
 
-    <!-- OVERALL ANALYSIS -->
-    <section class="card skincare-analysis">
-        <div class="card-header">Overall Skincare Analysis</div>
-        <div class="card-body">
-            <p class="total">Total Products Analysed : &nbsp;3</p>
-            <div class="products">
-                <span>Products:</span>
-                <ul>
-                    <li>Cerave Moisturizer xxx</li>
-                    <li>Product Name</li>
-                    <li>Product Name</li>
-                </ul>
-            </div>
-            <div class="tags">
-                <span class="tag yellow">3 Products</span>
-                <span class="tag green">94% Natural</span>
-                <span class="tag red">6% Synthetic</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- SHELF LIFE -->
-    <section class="card shelf-life">
-        <p class="shelf-life-title">Shelf Life Indicator -</p>
-        <p class="subtitle">How fresh is your skincare routine?</p>
-        <div class="flex">
-            <div class="gauge">
-                <img src="assets/images/Indicator.png" alt="Gauge chart">
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="desc">
-
-                <div class="orange-wrapper">
-                    <img class="orange" src="assets/images/Orange.png" alt="Orange">
-                    <img class="arrow" src="assets/images/arrow.png" alt="Arrow pointing to orange">
+        <!-- SHELF LIFE -->
+        <section class="card shelf-life">
+            <p class="shelf-life-title">Indicador de vida útil -</p>
+            <p class="subtitle">¿Sabes como de frescos son los productos que utilizas?</p>
+            <div class="flex">
+                <div class="gauge">
+                    <img src="assets/images/Indicator.png" alt="Gauge chart">
                 </div>
 
-                <div class="orange-wrapper-text">
-                    <p>Skincare products can lose up to 70% of their effectiveness within four months on the
-                        shelf.</p>
-                    <p>Since they typically sit for an average of eight months before you buy them, they are
-                        often far less effective by the time you use them.</p>
+                <div class="divider"></div>
+
+                <div class="desc">
+
+                    <div class="orange-wrapper">
+                        <img class="orange" src="assets/images/Orange.png" alt="Orange">
+                        <img class="arrow" src="assets/images/arrow.png" alt="Arrow pointing to orange">
+                    </div>
+
+                    <div class="orange-wrapper-text">
+                        <p>Los productos de cuidado de la piel pueden perder hasta un 70% de su eficacia en solo cuatro
+                            meses después de producción.</p>
+                        <p>La mayor parte de los productos de cuidado de piel que se venden, fueron creados unos 8 meses
+                            antes de llegar a tu casa, perdiendo eficacia antes de ser comprados.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- NATURAL VS SYNTHETIC -->
-    <section class="card chem-breakdown">
-        <p class="chem-breakdown-title">Natural vs Synthetic Breakdown</p>
-        <p class="chem-breakdown-subtitle">How many synthetic ingredients are in your skincare routine?</p>
-        <div class="flex">
-            <div class="pie-wrap">
-                <img src="assets/images/Pie-Chart.png" alt="Pie chart">
-                <div class="pie-info">
-                    <p class="natural">Natural 68%</p>
-                    <p class="synthetic">Synthetic 32%</p>
+        <!-- NATURAL VS SYNTHETIC -->
+        <section class="card chem-breakdown">
+            <p class="chem-breakdown-title">Desglose Natural vs Sintético</p>
+            <p class="chem-breakdown-subtitle">¿Cuántos ingredientes sintéticos hay en tu rutina de cuidado de la piel?
+            </p>
+            <div class="flex">
+                <div class="pie-wrap">
+                    <img src="assets/images/Pie-Chart.png" alt="Pie chart">
+                    <div class="pie-info">
+                        <p class="natural">Natural 68%</p>
+                        <p class="synthetic">Sintético 32%</p>
+                    </div>
                 </div>
+                <div class="divider"></div>
+                <img src="assets/images/Line-Graph.png" alt="Line chart">
             </div>
-            <div class="divider"></div>
-            <img src="assets/images/Line-Graph.png" alt="Line chart">
-        </div>
-    </section>
+        </section>
 
-    <!-- POTENTIAL RISK -->
-    <section class="card potential-risk">
-        <p class="potential-risk-title">Potential Risk</p>
-        <p class="potential-risk-subtitle">Secret killers in your skincare routine?</p>
-        <div class="flex">
+        <!-- POTENTIAL RISK -->
+        <section class="card potential-risk">
+            <p class="potential-risk-title">Riesgo Potencial</p>
+            <p class="potential-risk-subtitle">¿Asesinos ocultos en tu rutina de cuidado de la piel?</p>
+            <div class="flex">
 
-            <div class="risk-left">
+                <div class="risk-left">
 
-                <ul class="risk-list">
-                    <li>
-                        <img src="assets/images/heart.png" alt="heart icon" class="risk-icon">
-                        Hormone disruption risk
-                        <span class="badge high">high</span>
-                    </li>
-                    <li>
-                        <img src="assets/images/leaf.png" alt="heart icon" class="risk-icon">
-                        Hypoallergenic risk
-                        <span class="badge medium">medium</span>
-                    </li>
-                    <li>
-                        <img src="assets/images/circle.png" alt="heart icon" class="risk-icon">
-                        Comodogenic risk
-                        <span class="badge low">low</span>
-                    </li>
-                </ul>
+                    <ul class="risk-list">
+                        <li>
+                            <img src="assets/images/heart.png" alt="heart icon" class="risk-icon">
+                            Riesgo de alteración hormonal
+                            <span class="badge high">alto</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/leaf.png" alt="heart icon" class="risk-icon">
+                            Riesgo hipoalergénico
+                            <span class="badge medium">medio</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/circle.png" alt="heart icon" class="risk-icon">
+                            Riesgo comedogénico
+                            <span class="badge low">bajo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--div class="divider"></div-->
+
+                <img class="risk-face" src="assets/images/Faces.png" alt="Skin risk">
+
+
             </div>
-
-            <!--div class="divider"></div-->
-
-            <img class="risk-face" src="assets/images/Faces.png" alt="Skin risk">
+        </section>
 
 
-        </div>
-    </section>
+    </div>
 </body>
 
 </html>

@@ -103,7 +103,7 @@ header {
 }
 
 .label {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #2D4531;
   font-weight: 500;
   font-family: 'Messina', serif;
@@ -120,7 +120,7 @@ header {
 
 /* Ingredients */
 .sub-heading {
-  margin: 2rem 0 0.6rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: #2D4531;
@@ -207,7 +207,7 @@ header {
 
 /* Warnings */
 .warning-box {
-  background: #BA1C1C;
+  background: #db4a4a;
   color: #FFEFCC;
   padding: 1rem 2.25rem;
   border-radius: 30px;
@@ -234,7 +234,10 @@ header {
   padding: 0 2rem;
   margin-top: 4%;
   color: #2D4531;
+  position: relative;
+  z-index: 1;
 }
+
 
 .recommendations .recommendations-title {
   margin-bottom: 0.6rem;
@@ -250,6 +253,16 @@ header {
   line-height: 1.75;
   letter-spacing: 0rem;
   font-family: 'Messina', serif;
+}
+.stamp-overlay {
+  position: absolute;     
+  bottom: -10%;
+  right: 5%;          
+  width: 25%;
+  opacity: 0.7;
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 10;
 }
 
 
@@ -271,8 +284,8 @@ header {
 
   .page-title {
     padding-left: 12%;
-    font-size: 1.25rem;
-    margin-bottom: 0.5%;
+    font-size: 1.1rem;
+    margin-bottom: 0%;
   }
 
   .product-title {
@@ -281,67 +294,212 @@ header {
   }
 
   .tags-grid {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.25rem;
-  margin-top: 1rem;
-}
-.tag-box {
-  padding: 0.5rem 0.2rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  .tag-box {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .label {
+    font-size: 0.4rem;
+    font-weight: 800;
+  }
+
+  .value {
+    font-size: 0.75rem;
+    margin-top: 10%;
+  }
+
+  .sub-heading {
+    margin: 0 0 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .ingredients {
+    margin-bottom: 1rem;
+    font-size: 0.55rem;
+  }
+
+  .risk-tag {
+    padding: 0.2rem 1rem;
+    font-size: 0.55rem;
+  }
+
+  .warning-box {
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    margin: 2rem 0;
+
+  }
+
+  .warning-box .warning-box-title {
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
+
+  .warning-box .warning-box-content {
+    font-size: 0.55rem;
+    padding: 0.5rem 1rem 0 0.5rem;
+  }
+
+  .recommendations {
+    padding: 0 0.5rem;
+  }
+
+  .recommendations .recommendations-title {
+    font-size: 0.75rem;
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .recommendations ol {
+    margin-top: 2%;
+    font-size: 0.5rem;
+  }
 }
 
-.label {
-  font-size: 0.4rem;
-  font-weight: 800;
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    overflow: visible !important;
+  }
+
+   body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210mm;
+    height: 297mm;
+    background: url('assets/images/BackgroundPage2.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+
+  * {
+    box-shadow: none !important;
+    background-image: none !important;
+    transition: none !important;
+  }
+
+  .card {
+    /*page-break-inside: avoid !important;*/
+    margin: 1rem auto !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 20px !important;
+    width: 80% !important;
+  }
+
+
+  header {
+    margin-bottom: 5%;
+  }
+
+  .date {
+    font-size: 0.5rem;
+  }
+
+  .page-title {
+    padding-left: 12%;
+    font-size: 1.55rem;
+    margin-bottom: 0%;
+  }
+  .detailed-product-card{
+    margin-top: 1% !important;
+  }
+
+  .product-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tags-grid {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  .tag-box {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .label {
+    font-size: 0.55rem;
+    font-weight: 800;
+  }
+
+  .value {
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+
+  .sub-heading {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+  }
+
+  .ingredients {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .risk-tag {
+    padding: 0.2rem 1.2rem;
+    font-size: 0.75rem;
+  }
+
+  .warning-box {
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    margin: 2rem 0;
+
+  }
+
+  .warning-box .warning-box-title {
+    font-size: 1.5rem;
+    padding-bottom: 1.5%;
+  }
+
+  .warning-box .warning-box-content {
+    font-size: .85rem;
+    padding: 0.5rem 1rem 0 0.5rem;
+  }
+
+  .recommendations {
+    padding: 0 0.5rem;
+  }
+
+  .recommendations .recommendations-title {
+    font-size: 1.25rem;
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .recommendations ol {
+    margin-top: 2%;
+    font-size: 0.85rem;
+    
+  }
+
+  .stamp-overlay {   
+  bottom: -5%;
+  right: 0%;          
+  width: 30%;
 }
 
-.value {
-  font-size: 1rem;
-  margin-top: 10%;
-}
-
-.sub-heading {
-  margin: 0 0 0.6rem;
-  font-size: 0.75rem;
-}
-
-.ingredients {
-  margin-bottom: 1rem;
-  font-size: 0.55rem;
-}
-
-.risk-tag {
-  padding: 0.2rem 1rem;
-  font-size: 0.55rem;
-}
-
-.warning-box {
-  background: #BA1C1C;
-  color: #FFEFCC;
-  padding: 1rem 1.5rem;
-  border-radius: 30px;
-  margin: 2rem 0;
 
 }
-.warning-box .warning-box-title {
-  font-size: 1rem;
-  padding-bottom: 2%;
-}
 
-.warning-box .warning-box-content {
-  font-size: 0.55rem;
-  padding: 0.5rem 1rem 0 0.5rem;
-}
-
-.recommendations {
-  padding: 0 0.5rem;
-}
-.recommendations .recommendations-title {
-  font-size: 0.75rem;
-  width: 100%;
-  padding-left: 1%;
-}
-.recommendations ol {
-  margin-top: 2%;
-  font-size: 0.5rem;
-}
-}

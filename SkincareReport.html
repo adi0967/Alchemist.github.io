@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Report</title>
+  <link rel="stylesheet" href="SkinReport.css">
+</head>
+
+<body>
+
+
+
+  <!-- ========== PAGE 1 CONTENT ========== -->
+  <section class="page page1">
+    <div class="page-content">
+
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <img src="assets/images/MainLogo.png" alt="The Modern Alchemist">
+        </div>
+        <section class="title">
+          <h1>The Modern Alchemist</h1>
+          <h2>Your Personalised Skincare Report</h2>
+        </section>
+        <div class="date">27th August 2025</div>
+      </header>
+
+      <!-- OVERALL ANALYSIS -->
+      <section class="card skincare-analysis">
+        <div class="card-header">Análisis General del Cuidado de la Piel</div>
+        <div class="card-body">
+          <p class="total">Número de productos analizados : &nbsp;3</p>
+          <div class="products">
+            <span>Productos:</span>
+            <ul>
+              <li>Crema hidratante Cerave xxx</li>
+              <li>Nombre del producto</li>
+              <li>Nombre del producto</li>
+            </ul>
+          </div>
+          <div class="tags">
+            <span class="tag yellow">3 Productos</span>
+            <span class="tag green">94% Natural</span>
+            <span class="tag red">6% Sintético</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHELF LIFE -->
+      <section class="card shelf-life">
+        <p class="shelf-life-title">Indicador de vida útil -</p>
+        <p class="subtitle">¿Sabes como de frescos son los productos que utilizas?</p>
+        <div class="flex">
+          <div class="gauge">
+            <img src="assets/images/Indicator.png" alt="Gauge chart">
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="desc">
+
+            <div class="orange-wrapper">
+              <img class="orange" src="assets/images/Orange.png" alt="Orange">
+              <img class="arrow" src="assets/images/arrow.png" alt="Arrow pointing to orange">
+            </div>
+
+            <div class="orange-wrapper-text">
+              <p>Los productos de cuidado de la piel pueden perder hasta un 70% de su eficacia en solo cuatro
+                meses después de producción.</p>
+              <p>La mayor parte de los productos de cuidado de piel que se venden, fueron creados unos 8 meses
+                antes de llegar a tu casa, perdiendo eficacia antes de ser comprados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NATURAL VS SYNTHETIC -->
+      <section class="card chem-breakdown">
+        <p class="chem-breakdown-title">Desglose Natural vs Sintético</p>
+        <p class="chem-breakdown-subtitle">¿Cuántos ingredientes sintéticos hay en tu rutina de cuidado de la piel?
+        </p>
+        <div class="flex">
+          <div class="pie-wrap">
+            <img src="assets/images/Pie-Chart.png" alt="Pie chart">
+            <div class="pie-info">
+              <p class="natural">Natural 68%</p>
+              <p class="synthetic">Sintético 32%</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <img src="assets/images/Line-Graph.png" alt="Line chart">
+        </div>
+      </section>
+
+      <!-- POTENTIAL RISK -->
+      <section class="card potential-risk">
+        <p class="potential-risk-title">Riesgo Potencial</p>
+        <p class="potential-risk-subtitle">¿Asesinos ocultos en tu rutina de cuidado de la piel?</p>
+        <div class="flex">
+
+          <div class="risk-left">
+
+            <ul class="risk-list">
+              <li>
+                <img src="assets/images/heart.png" alt="heart icon" class="risk-icon">
+                Riesgo de alteración hormonal
+                <span class="badge high">alto</span>
+              </li>
+              <li>
+                <img src="assets/images/leaf.png" alt="heart icon" class="risk-icon">
+                Riesgo hipoalergénico
+                <span class="badge medium">medio</span>
+              </li>
+              <li>
+                <img src="assets/images/circle.png" alt="heart icon" class="risk-icon">
+                Riesgo comedogénico
+                <span class="badge low">bajo</span>
+              </li>
+            </ul>
+          </div>
+
+          <!--div class="divider"></div-->
+
+          <img class="risk-face" src="assets/images/Faces.png" alt="Skin risk">
+
+
+        </div>
+      </section>
+
+
+    </div>
+  </section>
+
+  <!-- ========== PAGE 2 CONTENT ========== -->
+  <section class="page page2">
+
+    <!-- PAGE TITLE -->
+    <h3 class="page-title">Análisis Detallado del Producto</h3>
+
+    <!-- DETAILED PRODUCT ANALYSIS -->
+    <section class=" detailed-product-card card">
+
+      <h4 class="product-title">Producto 1 | Hidratante Cerave</h4>
+
+      <!-- TAGS GRID -->
+      <div class="tags-grid">
+        <div class="tag-box">
+          <div class="label">Vida útil</div>
+          <div class="value">12 Meses</div>
+        </div>
+        <div class="tag-box">
+          <div class="label">Natural %</div>
+          <div class="value">93%</div>
+        </div>
+        <div class="tag-box">
+          <div class="label">Sintético %</div>
+          <div class="value">7%</div>
+        </div>
+        <div class="tag-box">
+          <div class="label">Riesgo Hormonal</div>
+          <div class="value">BAJO</div>
+        </div>
+      </div>
+
+
+      <!-- INGREDIENT LIST -->
+      <p class="sub-heading">Lista de ingredientes</p>
+      <hr class="section-divider">
+      <table class="ingredients">
+        <thead>
+          <tr>
+            <th class="col-left">Nombre</th>
+            <th class="col-center">Riesgo</th>
+            <th class="col-right"><span class="risk-tag red">5%</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-left">Eau</td>
+            <td class="col-center">Natural</td>
+            <td class="col-right"><span class="risk-tag yellow">20%</span></td>
+          </tr>
+          <tr>
+            <td class="col-left">Glicerina</td>
+            <td class="col-center">Natural</td>
+            <td class="col-right"><span class="risk-tag yellow">23%</span></td>
+          </tr>
+          <tr>
+            <td class="col-left">Alcohol Cetearílico</td>
+            <td class="col-center">Natural</td>
+            <td class="col-right"><span class="risk-tag yellow">35%</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!-- WARNINGS -->
+      <div class="warning-box">
+        <p class="warning-box-title">¡Advertencias!</p>
+        <p class="warning-box-content">1. Contiene alérgenos incluyendo DEA, amidamina y DMAPA están presentes, lo
+          que puede causar reacciones alérgicas en algunos usuarios. Haz una prueba
+          de parche antes de la aplicación completa.</p>
+        <p class="warning-box-content">2. Alérgenos de fragancias como linalool y limonene pueden ser irritantes
+          para
+          la piel sensible, así que vigila cualquier reacción adversa.</p>
+      </div>
+
+      <!-- RECOMMENDATIONS -->
+      <div class="recommendations">
+
+        <img src="assets/images/stamp.png" alt="stamp" class="stamp-overlay">
+
+        <p class="recommendations-title">Recomendaciones de The Modern Alchemist</p>
+        <ol>
+          <li>Da preferencia a los productos que indiquen claramente la fecha de fabricación y
+            selecciona aquellos elaborados en el último mes para asegurar la máxima eficacia.</li>
+          <li>Opt for formulations with a high proportion of natural ingredients, ideally around 95% or higher.
+          </li>
+          <li>Elige formulaciones con un alto porcentaje de ingredientes naturales,
+            idealmente en torno al 90% o más.</li>
+        </ol>
+      </div>
+
+
+
+    </section>
+
+  </section>
+
+</body>
+
+</html>
