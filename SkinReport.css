@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'BehindTheNineties';
-  src: url('/assets/fonts/BehindTheNineties-Regular.ttf') format('truetype');
+  src: url('assets/fonts/BehindTheNineties-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Messina';
-  src: url('/assets/fonts/MessinaSansMonoWeb-Regular.ttf') format('truetype');
+  src: url('assets/fonts/MessinaSansMonoWeb-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,13 +27,13 @@ body {
 }
 
 .page1 {
-  background: url("/assets/images/BackgroundPage1.png") no-repeat center center;
+  background: url("assets/images/BackgroundPage1.png") no-repeat center center;
   background-size: 100% 100%;
   padding-bottom: 2%;
 }
 
 .page2 {
-  background: url("/assets/images/BackgroundPage2.png") no-repeat center center;
+  background: url("assets/images/BackgroundPage2.png") no-repeat center center;
   background-size: 100% 100%;
   padding-top: 1%;
   padding-bottom: 2%;
