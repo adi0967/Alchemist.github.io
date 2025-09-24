@@ -797,7 +797,7 @@ header {
     font-size: 0.4rem;
   }
 
-  .card {
+  .page2 .card {
     margin: 0.75rem auto;
     padding: 0.75rem 1rem;
     border-radius: 20px;
@@ -1210,8 +1210,8 @@ header {
     font-size: 0.25rem;
   }
 
-  .card {
-    margin: 0.75rem auto;
+  .page1 .card {
+    margin: 0.35rem auto;
     padding: 0.75rem 1rem;
     border-radius: 20px;
     width: 75%;
